@@ -49,15 +49,11 @@ for rows in Sheet.rows:
 	driver.find_element("link text","Message").click()
 	sleep(2)
 	
-	driver.find_element("xpath", '//div[@aria-label="Write a message…"]/p').send_keys("Hey!! \nWelcome to Simulation World.\nFrom :- Isha, Bhavya, Mehak, Muskan, Siddharth ")
+	driver.find_element("xpath", '//div[@aria-label="Write a message…"]/p').send_keys("Hey!! \nWelcome to Simulation World.\nFrom :- +Siddharth ")
 	sleep(2)
     
 	arr1=rows[0].value
-	#sleep(1)
-	#text=driver.send_keys("Hey!!")
-	#text.send_keys("Hey " + arr1+" " + parameters.message)
-	#element=driver.find_element("name",'q')
-	#element.send_keys('Hey!!!')
+	
 	sleep(3)
 
 	driver.find_element("xpath",'//button[@class="msg-form__send-button artdeco-button artdeco-button--1"]').click() 
